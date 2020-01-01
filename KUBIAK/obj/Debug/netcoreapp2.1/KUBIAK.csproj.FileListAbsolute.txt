@@ -1,0 +1,11 @@
+C:\Users\Pati\source\repos\KUBIAK\KUBIAK\bin\Debug\netcoreapp2.1\KUBIAK.deps.json
+C:\Users\Pati\source\repos\KUBIAK\KUBIAK\bin\Debug\netcoreapp2.1\KUBIAK.runtimeconfig.json
+C:\Users\Pati\source\repos\KUBIAK\KUBIAK\bin\Debug\netcoreapp2.1\KUBIAK.runtimeconfig.dev.json
+C:\Users\Pati\source\repos\KUBIAK\KUBIAK\bin\Debug\netcoreapp2.1\KUBIAK.dll
+C:\Users\Pati\source\repos\KUBIAK\KUBIAK\bin\Debug\netcoreapp2.1\KUBIAK.pdb
+C:\Users\Pati\source\repos\KUBIAK\KUBIAK\obj\Debug\netcoreapp2.1\KUBIAK.csprojAssemblyReference.cache
+C:\Users\Pati\source\repos\KUBIAK\KUBIAK\obj\Debug\netcoreapp2.1\KUBIAK.csproj.CoreCompileInputs.cache
+C:\Users\Pati\source\repos\KUBIAK\KUBIAK\obj\Debug\netcoreapp2.1\KUBIAK.AssemblyInfoInputs.cache
+C:\Users\Pati\source\repos\KUBIAK\KUBIAK\obj\Debug\netcoreapp2.1\KUBIAK.AssemblyInfo.cs
+C:\Users\Pati\source\repos\KUBIAK\KUBIAK\obj\Debug\netcoreapp2.1\KUBIAK.dll
+C:\Users\Pati\source\repos\KUBIAK\KUBIAK\obj\Debug\netcoreapp2.1\KUBIAK.pdb
