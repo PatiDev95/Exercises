@@ -19,7 +19,18 @@ namespace KUBIAK
             //Zadanie23();
             //Zadanie24();
             //Zadanie25();
-            Zadanie31();
+            //Zadanie31();
+            //Zadanie32();
+            //Zadanie33();
+            //Zadanie34();
+            //Zadanie35();
+            //Zadanie36();
+            //Zadanie37();
+            //Zadanie38();
+            //Zadanie39();
+            //Zadanie310();
+            //Zadanie311();
+            //Zadanie312();
 
         }
 
@@ -290,7 +301,7 @@ namespace KUBIAK
         {
             int x, y;
 
-            Console.WriteLine("Program oblicza wartość funkcji y=3*x, dla x zmieniajacego się od 0 do 10.");
+            Console.WriteLine("Program oblicza wartość funkcji y=3*x, dla x zmieniajacego się od 0 do 10. Z wykorzystaniem pętli for.");
             Console.WriteLine();
 
             for (x=0; x<=10; x++)
@@ -299,4 +310,173 @@ namespace KUBIAK
                 Console.WriteLine("x=" + x + " to" + '\t' + "y=" + y);
             }
         }
+        static void Zadanie32()
+        {
+            int x=0, y=0;
+
+            Console.WriteLine("Program oblicza wartość funkcji y=3*x, dla x zmieniajacego się od 0 do 10. Z wykorzystaniem pętli do ... while");
+            Console.WriteLine();
+
+            do
+            {
+                y = 3 * x;
+                Console.WriteLine("x = " + x + '\t' + "y = " + y);
+                x++;
+            }
+            while (x <= 10);
+        }
+
+        static void Zadanie33()
+        {
+            int x = 0, y = 0;
+
+            Console.WriteLine("Program oblicza wartość funkcji y=3*x, dla x zmieniajacego się od 0 do 10. Z wykorzystaniem pętli while");
+            Console.WriteLine();
+
+            while (x<=10)
+            {
+                y = 3 * x;
+                Console.WriteLine("x = " + x + '\t' + "y = " + y);
+                x++;
+            }
+        }
+        static void Zadanie34()
+        {
+            int x;
+
+            Console.WriteLine("Program wyświetla liczby całkowite od 1 do 20.");
+            Console.WriteLine();
+
+            for (x=1; x<=20; x++)
+            {
+                if (x < 20)
+                    Console.Write(x + ",");
+                else
+                    Console.Write(x + ".");
+            }
+        }
+        static void Zadanie35()
+        {
+            int x = 1;
+
+            Console.WriteLine("Program wyświetla liczby całkowite od 1 do 20.");
+            Console.WriteLine();
+
+            do
+            {
+                if (x < 20)
+                    Console.Write(x + ",");
+                else
+                    Console.Write(x + ".");
+                x++;
+            }
+            while (x <= 20);
+        }
+        static void Zadanie36()
+        {
+            int x = 0;
+
+            Console.WriteLine("Program wyświetla liczby całkowite od 1 do 20.");
+            Console.WriteLine();
+
+            while (x<=20)
+            {
+                if (x < 20)
+                    Console.Write(x + ",");
+                else
+                    Console.Write(x + ".");
+                x++;
+            }
+        }
+
+        static void Zadanie37()
+        {
+            int x, suma = 0;
+
+            Console.WriteLine("Program sumuje liczby całkowite od 1 do 100");
+
+            for (x = 0; x <= 100; x++)
+            {
+                suma = suma + x;
+            }
+                Console.WriteLine("Suma liczb od 1 do 100 wynosi: " + suma + ".");
+        }  
+
+        static void Zadanie38()
+        {
+            int x = 0, suma = 0;
+
+            Console.WriteLine("Program sumuje liczby całkowite od 1 do 100");
+
+            do
+            {
+                suma = suma + x;
+                x++;
+            }
+            while (x <= 100);
+
+            Console.WriteLine("Suma liczb od 1 do 100 wynosi: " + suma + ".");
+        }
+
+        static void Zadanie39()
+        {
+            int x = 0, suma = 0;
+
+            Console.WriteLine("Program sumuje liczby całkowite od 1 do 100");
+
+            while (x <= 100) 
+            {
+                suma = suma + x;
+                x++;
+            }
+
+            Console.WriteLine("Suma liczb od 1 do 100 wynosi: " + suma + ".");
+        }
+
+        static void Zadanie310()
+        {
+            int x, suma = 0;
+
+            Console.WriteLine("Program sumuje liczby parzyste od 1 do 100");
+
+            for (x = 1; x <= 100; x++) 
+            {
+                if (x % 2 == 0) suma += x;
+            }
+            Console.WriteLine("Suma liczb parzystych od 1 do 100 wynosi: " + suma);
+        }
+
+        static void Zadanie311()
+        {
+            int x = 0, suma = 0;
+
+            Console.WriteLine("Program sumuje liczby parzyste od 1 do 100");
+
+            do
+            {
+                if (x % 2 == 0) suma += x;
+                x++;
+            }
+            while (x <= 100);
+
+            Console.WriteLine("Suma liczb parzystych od 1 do 100 wynosi: " + suma);
+        }
+
+        static void Zadanie312()
+        {
+            int x = 0, suma = 0;
+
+            Console.WriteLine("Program sumuje liczby parzyste od 1 do 100");
+
+            while (x<=100)
+            {
+                if (x % 2 == 0) suma += x;
+                x++;
+            }
+            Console.WriteLine("Suma liczb parzystych od 1 do 100 wynosi: " + suma);
+        }
 }   }
+
+
+
+
