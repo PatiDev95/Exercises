@@ -18,7 +18,8 @@ namespace KUBIAK
             //Zadanie22();
             //Zadanie23();
             //Zadanie24();
-            Zadanie25();
+            //Zadanie25();
+            Zadanie31();
 
         }
 
@@ -191,7 +192,7 @@ namespace KUBIAK
         }
         static void Zadanie23()
         {
-            double a, b, c, x1, x2, x, delta;
+            double a, b, c, x1, x2, delta;
             byte liczba_pierwiastkow = 0;
 
             Console.WriteLine("Program oblicza równanie kwadratowe ax^2+bx+c=0.");
@@ -285,5 +286,17 @@ namespace KUBIAK
                    ;
             }
         }
+        static void Zadanie31()
+        {
+            int x, y;
 
+            Console.WriteLine("Program oblicza wartość funkcji y=3*x, dla x zmieniajacego się od 0 do 10.");
+            Console.WriteLine();
+
+            for (x=0; x<=10; x++)
+            {
+                y = 3 * x;
+                Console.WriteLine("x=" + x + " to" + '\t' + "y=" + y);
+            }
+        }
 }   }
