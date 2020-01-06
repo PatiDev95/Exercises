@@ -6,31 +6,31 @@ namespace KUBIAK
     {
         static void Main(string[] args)
         {
-            //Zadanie11();
-            //Zadanie12();
-            //Zadanie13();
-            //Zadanie14();
-            //Zadanie15A();
-            //Zadanie15B();
-            //Zadanie16();
-            //Zadanie17();
-            //Zadanie21();
-            //Zadanie22();
-            //Zadanie23();
-            //Zadanie24();
-            //Zadanie25();
-            //Zadanie31();
-            //Zadanie32();
-            //Zadanie33();
-            //Zadanie34();
-            //Zadanie35();
-            //Zadanie36();
-            //Zadanie37();
-            //Zadanie38();
-            //Zadanie39();
-            //Zadanie310();
-            //Zadanie311();
-            //Zadanie312();
+            Zadanie11();
+            Zadanie12();
+            Zadanie13();
+            Zadanie14();
+            Zadanie15A();
+            Zadanie15B();
+            Zadanie16();
+            Zadanie17();
+            Zadanie21();
+            Zadanie22();
+            Zadanie23();
+            Zadanie24();
+            Zadanie25();
+            Zadanie31();
+            Zadanie32();
+            Zadanie33();
+            Zadanie34();
+            Zadanie35();
+            Zadanie36();
+            Zadanie37();
+            Zadanie38();
+            Zadanie39();
+            Zadanie310();
+            Zadanie311();
+            Zadanie312();
 
         }
 
