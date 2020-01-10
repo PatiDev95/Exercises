@@ -6,31 +6,44 @@ namespace KUBIAK
     {
         static void Main(string[] args)
         {
-            Zadanie11();
-            Zadanie12();
-            Zadanie13();
-            Zadanie14();
-            Zadanie15A();
-            Zadanie15B();
-            Zadanie16();
-            Zadanie17();
-            Zadanie21();
-            Zadanie22();
-            Zadanie23();
-            Zadanie24();
-            Zadanie25();
-            Zadanie31();
-            Zadanie32();
-            Zadanie33();
-            Zadanie34();
-            Zadanie35();
-            Zadanie36();
-            Zadanie37();
-            Zadanie38();
-            Zadanie39();
-            Zadanie310();
-            Zadanie311();
-            Zadanie312();
+            //Zadanie11();
+            //Zadanie12();
+            //Zadanie13();
+            //Zadanie14();
+            //Zadanie15A();
+            //Zadanie15B();
+            //Zadanie16();
+            //Zadanie17();
+            //Zadanie21();
+            //Zadanie22();
+            //Zadanie23();
+            //Zadanie24();
+            //Zadanie25();
+            //Zadanie31();
+            //Zadanie32();
+            //Zadanie33();
+            //Zadanie34();
+            //Zadanie35();
+            //Zadanie36();
+            //Zadanie37();
+            //Zadanie38();
+            //Zadanie39();
+            //Zadanie310();
+            //Zadanie311();
+            //Zadanie312();
+            //Zadanie313();
+            //Zadanie314();
+            //Zadanie315();
+            //Zadanie316();
+            //Zadanie317();
+            //Zadanie318();
+            //Zadanie319();
+            //Zadanie320();
+            //Zadanie321();
+            Zadanie322();
+            Zadanie323();
+
+       
 
         }
 
@@ -474,6 +487,293 @@ namespace KUBIAK
                 x++;
             }
             Console.WriteLine("Suma liczb parzystych od 1 do 100 wynosi: " + suma);
+        }
+
+        static void Zadanie313()
+        {
+            int x, suma = 0;
+
+            Console.WriteLine("Zadanie 13 Suma liczb nieparzystych od 1 do 100");
+
+            for (x = 1; x <= 100; x++)
+            {
+                if (!(x % 2 == 0)) suma = suma + x;
+            }
+
+            Console.WriteLine("Zadanie 13 Suma liczb nieparzystych to:" + suma);
+        }
+
+        static void Zadanie314()
+        {
+            int x = 0, suma = 0;
+
+            Console.WriteLine("Zadanie 14 Suma liczb nieparzystych od 1 do 100");
+
+            do
+            {
+                if (!(x % 2 == 0)) suma = suma + x;
+                x++;
+            }
+            while (x <= 100);
+
+            Console.WriteLine("Zadanie 14 Suma liczb nieparzystych od 1 do 100 wynosi: {0:#.##}", suma);
+        }
+
+        static void Zadanie315()
+        {
+            int x = 1, suma = 0;
+
+            Console.WriteLine("Zadanie 15 Suma liczb nieparzystych od 1 do 100. (pętla while)");
+
+            while (x<=100)
+            {
+                if (!(x % 2 == 00)) suma = suma + x;
+                x++;
+            }
+
+            Console.WriteLine("Zadanie 15 Suma liczb nieparzystych od 1 do 100 wynosi:" + suma);
+        }
+
+        static void Zadanie316()
+
+        {
+            int ilosc_liczb = 5, i;
+            double liczba, suma = 0, min, max;
+
+            Console.WriteLine("Program znajduje " + ilosc_liczb + " liczb całkowitych od 0 do 99, a następnie znajduje największą i najmiejszą");
+            Console.WriteLine("oraz oblicza średnią ze wszystkich wylosowanych liczb.");
+
+            Random r = new Random();
+            min = Math.Round(100 * (r.NextDouble()));
+            Console.Write("Wylosowano liczby: " + min + ", ");
+           
+            max = min;
+            suma = suma + max;
+
+            for (i = 2; i <= ilosc_liczb; i++)
+            {
+                liczba = Math.Round(100 * (r.NextDouble()));
+                if (i < ilosc_liczb)
+                    Console.Write(liczba + ", ");
+                else
+                {
+                    Console.WriteLine(liczba + ".");
+                }
+
+                if (max < liczba) max = liczba;
+                if (liczba < min) min = liczba;
+
+                suma = suma + liczba;
+            }
+
+            Console.WriteLine("Min:" + min + " Max:" + max + " Średnia:" + suma / ilosc_liczb + ".");
+            Console.WriteLine();
+        }
+        static void Zadanie317()
+        {
+            int ilosc_liczb = 5, i=2;
+            double liczba, suma = 0, min, max;
+
+
+            Console.WriteLine("Program znajduje " + ilosc_liczb + " liczb całkowitych od 0 do 99, a następnie znajduje największą i najmiejszą");
+            Console.WriteLine("oraz oblicza średnią ze wszystkich wylosowanych liczb.");
+
+            Random r = new Random();
+            min = Math.Round(100 * (r.NextDouble()));
+            Console.Write("Wylosowano liczby: " + min + ", ");
+
+            max = min;
+            suma = suma + max;
+
+            do
+            {
+                liczba = Math.Round(100 * (r.NextDouble()));
+
+                if (i < ilosc_liczb)
+                    Console.Write(liczba + ", ");
+                else
+                    Console.WriteLine(liczba + ".");
+
+                if (liczba > max) max = liczba;
+                if (liczba < min) min = liczba;
+
+                suma = suma + liczba;
+                i++;
+            }
+            while (i <= ilosc_liczb);
+
+            Console.WriteLine("Min:" + min + " Max:" + max + " Średnia:" + suma / ilosc_liczb + ".");
+            Console.WriteLine();
+        }
+
+       static void Zadanie318()
+        {
+            int ilosc_liczb = 5, i = 2;
+            double liczba, suma = 0, min, max;
+
+
+            Console.WriteLine("Program znajduje " + ilosc_liczb + " liczb całkowitych od 0 do 99, a następnie znajduje największą i najmiejszą");
+            Console.WriteLine("oraz oblicza średnią ze wszystkich wylosowanych liczb.");
+
+            Random r = new Random();
+            min = Math.Round(100 * (r.NextDouble()));
+            Console.Write("Wylosowano liczby: " + min + ", ");
+
+            max = min;
+            suma = suma + min;
+
+            while (i<=ilosc_liczb)
+            {
+                liczba = Math.Round(100 * (r.NextDouble()));
+                if (i < ilosc_liczb)
+                    Console.Write(liczba + ", ");
+                else
+                    Console.WriteLine(liczba + ".");
+
+                if (liczba > max) max = liczba;
+                if (liczba < min) min = liczba;
+
+                suma = suma + liczba;
+                i++;
+            }
+            Console.WriteLine("Min:" + min + " Max:" + max + " Średnia:" + suma / ilosc_liczb + ".");
+       }
+
+        static void Zadanie319()
+        {
+            int n = 10, wiersz, kolumna;
+
+            Console.WriteLine("Program wyświetla tabliczkę mnożenia dla liczb od 1 do 100.");
+            Console.WriteLine();
+
+            for (wiersz = 1; wiersz <= n; wiersz++)
+            {
+                for(kolumna=1; kolumna<=n; kolumna++)
+                {
+                    Console.Write(wiersz * kolumna + "\t");
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+        }
+
+        static void Zadanie320()
+        {
+            int n = 10, wiersz, kolumna;
+
+            Console.WriteLine("Program wyświetla tabliczkę mnożenia dla liczb od 1 do 100.");
+            Console.WriteLine();
+
+            wiersz = 1;
+
+            do
+            {
+               kolumna = 1;
+                do
+                {
+                    Console.Write(wiersz  * kolumna + "\t");
+                    kolumna++;
+                }
+                while (kolumna <= n);
+
+                wiersz++;
+                Console.WriteLine();
+
+            }
+            while (wiersz <= n);
+
+            Console.WriteLine();
+        }
+
+        static void Zadanie321()
+        {
+            int n=10,  wiersz, kolumna;
+
+            Console.WriteLine("Program wyświetla tabliczkę mnożenia dla liczb od 1 do 100.");
+            Console.WriteLine();
+
+            wiersz = 1;
+
+            while (wiersz<=n)
+            {
+                kolumna = 1;
+                while (kolumna <= n)
+                {
+                    Console.Write(wiersz * kolumna + "\t");
+                    kolumna++;
+                }
+                wiersz++;
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+        }
+
+        static void Zadanie322()
+        {
+            char znak;
+
+            Console.WriteLine("Program wyświetla duże litery alfabetu od A do Z i od Z do A.");
+            Console.WriteLine("Litery alfabetu w kolejności zwiększającej się: ");
+
+            for (znak = 'A'; znak <= 'Z'; znak++)
+            {
+                if (znak < 'Z')
+                    Console.Write(znak + ", ");
+                else
+                    Console.Write(znak + ".");
+            }
+
+            Console.WriteLine();
+
+            Console.WriteLine("Litery alfabetu w kolejności zmniejszającej się: ");
+
+            for (znak = 'Z'; znak >= 'A'; znak--) 
+            {
+                if (znak > 'A')
+                    Console.Write(znak + ", ");
+                else
+                    Console.Write(znak + ".");
+            }
+
+            Console.WriteLine();
+            Console.WriteLine();
+        }
+
+        static void Zadanie323()
+        {
+            char znak;
+
+            Console.WriteLine("Program wyświetla duże litery alfabetu od A do Z i od Z do A.");
+            Console.WriteLine("Litery alfabetu w kolejności zwiększającej się: ");
+
+            znak = 'A';
+
+            do
+            {
+                if (znak < 'Z')
+                    Console.Write(znak + ", ");
+                else
+                    Console.Write(znak + ".");
+                znak++;
+            }
+            while (znak <= 'Z');
+
+            Console.WriteLine();
+
+            Console.WriteLine("Litery alfabetu w kolejności zmniejszającej się: ");
+
+            znak = 'Z';
+
+            do
+            {
+                if (znak > 'A')
+                    Console.Write(znak + ", ");
+                else
+                    Console.Write(znak + ".");
+
+                znak--;
+            }
+            while (znak >= 'A');
         }
 }   }
 
