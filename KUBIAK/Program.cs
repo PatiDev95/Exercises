@@ -40,8 +40,20 @@ namespace KUBIAK
             //Zadanie319();
             //Zadanie320();
             //Zadanie321();
-            Zadanie322();
-            Zadanie323();
+            //Zadanie322();
+            //Zadanie323();
+            //Zadanie324();
+            //Zadanie325();
+            //Zadanie325B();
+            //Zadanie325C();
+            //Zadanie326();
+            //Zadanie326B();
+            //Zadanie326C();
+            //Zadanie327();
+            Zadanie28();
+            Zadanie28B();
+            Zadanie28C();
+
 
        
 
@@ -774,8 +786,262 @@ namespace KUBIAK
                 znak--;
             }
             while (znak >= 'A');
+
+            Console.WriteLine();
+            Console.WriteLine();
         }
-}   }
+        static void Zadanie324()
+        {
+            char znak;
+
+            Console.WriteLine("Program wyświetla duże litery alfabetu od A do Z i od Z do A.");
+            Console.WriteLine("Litery alfabetu w kolejności zwiększającej się: ");
+
+            znak = 'A';
+
+            while (znak <= 'Z')
+            {
+                if (znak < 'Z')
+                    Console.Write(znak + ", ");
+                else
+                    Console.Write(znak + ".");
+                znak++;
+            }
+           
+            Console.WriteLine();
+
+            Console.WriteLine("Litery alfabetu w kolejności zmniejszającej się: ");
+
+            znak = 'Z';
+
+            while (znak >= 'A')
+            {
+                if (znak > 'A')
+                    Console.Write(znak + ", ");
+                else
+                    Console.Write(znak + ".");
+
+                znak--;
+            }
+
+            Console.WriteLine();
+            Console.WriteLine();
+        }
+
+       static void Zadanie325()
+        {
+            int j = 0, i;
+
+            for (i=1000; i<=9999; i++)
+            {
+                int pdc = i / 100;
+                int odc = i % 100;
+
+                if (pdc * pdc + odc * odc == i)
+                {
+                    Console.WriteLine(i + "=" + pdc + "*" + pdc + "+" + odc + "*" + odc);
+                    j++;
+                }
+                
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Znaleziono " + j + " liczy.");
+        }
+
+        static void Zadanie325B()
+        {
+            Console.WriteLine();
+            Console.WriteLine();
+
+            int x = 1000, j = 0;
+
+            do
+            {
+                int pdc = x / 100;
+                int odc = x % 100;
+
+                if (x == pdc * pdc + odc * odc)
+                {
+                    Console.WriteLine(x + "=" + pdc + "*" + pdc + "+" + odc + "*" + odc);
+                    j++;
+                }
+                x++;
+            }
+            while (x < 10000);
+
+
+            Console.WriteLine();
+            Console.WriteLine("Znaleziono " + j + " liczy.");
+        }
+
+        static void Zadanie325C()
+        {
+            Console.WriteLine();
+            Console.WriteLine();
+
+            int x = 1000, j = 0;
+
+            while (x < 10000) 
+            {
+                int pdc = x / 100;
+                int odc = x % 100;
+
+                if (x == pdc * pdc + odc * odc)
+                {
+                    Console.WriteLine(x + "=" + pdc + "*" + pdc + "+" + odc + "*" + odc);
+                    j++;
+                }
+                x++;
+            }
+            
+
+            Console.WriteLine();
+            Console.WriteLine("Znaleziono " + j + " liczy.");
+        }
+
+        static void Zadanie326()
+        {
+            Console.WriteLine();
+            Console.WriteLine();
+
+            int j = 0, i;
+
+            for (i = 100000; i < 1000000; i++)
+            {
+               int ptc = i / 1000;
+               int otc = i % 1000;
+               
+                if ( ptc * ptc + otc * otc == i)
+                {
+                    Console.WriteLine(i + "=" + ptc + "*" + ptc + "+" + otc + "*" + otc);
+                    j++;
+                }
+            }
+            Console.WriteLine();
+            Console.WriteLine("Znaleziono " + j + " liczbę.");
+        }
+
+        static void Zadanie326B()
+        {
+            Console.WriteLine();
+            Console.WriteLine();
+
+            int j = 0, i=100000;
+
+            do
+            {
+                int ptc = i / 1000;
+                int otc = i % 1000;
+
+                if (ptc * ptc + otc * otc == i)
+                {
+                    Console.WriteLine(i + "=" + ptc + "*" + ptc + "+" + otc + "*" + otc);
+                    j++;
+                }
+                i++;
+            }
+            while (i < 1000000);
+
+            Console.WriteLine();
+            Console.WriteLine("Znaleziono " + j + " liczbę.");
+        }
+
+        static void Zadanie326C()
+
+        {
+            Console.WriteLine();
+            Console.WriteLine();
+
+            int j = 0, i = 100000;
+
+            while (i < 1000000)
+            {
+                int ptc = i / 1000;
+                int otc = i % 1000;
+
+                if (ptc * ptc + otc * otc == i)
+                {
+                    Console.WriteLine(i + "=" + ptc + "*" + ptc + "+" + otc + "*" + otc);
+                    j++;
+                }
+                i++;
+            }
+           
+
+            Console.WriteLine();
+            Console.WriteLine("Znaleziono " + j + " liczbę.");
+        }
+
+        static void Zadanie327()
+        {
+            Int32 liczba_punktow = 100000000, i;
+            int licznik = 0;
+            double x, y, pi;
+
+            Console.WriteLine("Proszę czekać...");
+            Random r = new Random();
+
+            for (i = 1; i < liczba_punktow; i++)
+            {
+                x = Math.Round(100 * (r.NextDouble())) / 100.0;
+                y = Math.Round(100 * (r.NextDouble())) / 100.0;
+
+                if (x * x + y * y <= 1)
+                {
+                    licznik = licznik + 1;
+                }
+
+            }
+
+            pi = 4.0 * licznik / liczba_punktow;
+
+            Console.WriteLine("Wartość pi = " + Math.PI);
+            Console.WriteLine("Oblicznona wartość pi = " + pi);
+        }
+
+        static void Zadanie28()
+        {
+            int x, i;
+
+            for (i = 0; i < 20; i++)
+            {
+                x = i / 2;
+                Console.Write(x);
+            }
+
+            Console.WriteLine();
+        }
+        static void Zadanie28B()
+        {
+            int x, i=0;
+
+            do
+            {
+                x = i / 2;
+                Console.Write(x);
+                i++;
+            }
+            while (i < 20) ;
+
+            Console.WriteLine();
+        }
+
+        static void Zadanie28C()
+        {
+            int x, i = 0;
+
+            while(i < 20)
+            {
+                x = i / 2;
+                Console.Write(x);
+                i++;
+            }
+
+            Console.WriteLine();
+        }
+    }
+}   
 
 
 
