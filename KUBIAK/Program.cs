@@ -50,12 +50,16 @@ namespace KUBIAK
             //Zadanie326B();
             //Zadanie326C();
             //Zadanie327();
-            Zadanie28();
-            Zadanie28B();
-            Zadanie28C();
+            //Zadanie328();
+            //Zadanie328B();
+            //Zadanie328C();
+            //Zadanie41();
+            //Zadanie42();
+            Zadanie43();
+            Zadanie44();
+            Zadanie45();
 
 
-       
 
         }
 
@@ -1000,7 +1004,7 @@ namespace KUBIAK
             Console.WriteLine("Oblicznona wartość pi = " + pi);
         }
 
-        static void Zadanie28()
+        static void Zadanie328()
         {
             int x, i;
 
@@ -1012,7 +1016,7 @@ namespace KUBIAK
 
             Console.WriteLine();
         }
-        static void Zadanie28B()
+        static void Zadanie328B()
         {
             int x, i=0;
 
@@ -1027,7 +1031,7 @@ namespace KUBIAK
             Console.WriteLine();
         }
 
-        static void Zadanie28C()
+        static void Zadanie328C()
         {
             int x, i = 0;
 
@@ -1038,6 +1042,127 @@ namespace KUBIAK
                 i++;
             }
 
+            Console.WriteLine();
+        }
+
+        static void Zadanie41()
+        {
+            int n = 10, i;
+
+            int[] dane = new int[n];
+            Console.WriteLine("Program wyświetla zawartość tablicy jednowumiarowej " + n + "-elementowej.");
+        
+            for (i = 0; i < n; i++)
+            {
+                dane[i] = i;
+                Console.WriteLine("dane[" + i + "] = " + dane[i]);
+
+            }
+
+            Console.WriteLine();
+
+        }
+
+        static void Zadanie42()
+        {
+            int n = 10, i;
+
+            int[] dane = new int[n];
+            Console.WriteLine("Program wyświetla zawartość tablicy jednowymiarowej " + n + "-elementowej.");
+           
+            for (i=0; i<n; i++)
+            {
+                dane[i] = n-1-i;
+                Console.WriteLine("dane[" + i + "] = " + dane[i]);
+
+            }
+        }
+
+        static void Zadanie43()
+        {
+            int n = 10, i, j, suma;
+            int[,] macierz = new int[n,n];
+
+            Console.WriteLine("Program wyświetla zawartość tablicy dwuwymiarowej " + n + "x" + n + "-elementowej.");
+
+            for (i=0; i<n; i++)
+            {
+                for (j=0; j<n; j++)
+                {
+                    if (i == j)
+                        macierz[i, j] = 1;
+                    else
+                        macierz[i, j] = 0;
+
+                    Console.Write(macierz[i, j] + " ");
+                }
+                Console.WriteLine();
+            }
+
+            Console.WriteLine();
+
+            suma = 0;
+
+            for (i=0; i<n; i++)
+            {
+                suma = suma + macierz[i, i];
+            }
+
+            Console.WriteLine("Suma wyróżnionych elementów w tablicy wynosi " + suma + ".");
+            Console.WriteLine();
+
+        }
+
+        static void Zadanie44()
+        {
+            int n = 10, i, j;
+            int[,] macierz = new int[n, n];
+
+            Console.WriteLine("Program wyświetla zawartość tablicy dwuwymiarowej " + n + "x" + n + "-elementowej.");
+
+            for (i = 0; i < n; i++)
+            {
+                for (j = 0; j < n; j++)
+                {
+                    if (i == j)
+                        macierz[i, j] = i;
+                    else
+                        macierz[i, j] = 0;
+                    Console.Write(macierz[i, j] + " ");
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+        }
+
+        static void Zadanie45()
+        {
+            int n = 10, i, j, suma;
+            int[,] macierz = new int[10, 10];
+
+            Console.WriteLine("Program wyświetla zawartość tablicy dwuwymiarowej " + n + "x" + n + "-elementowej.");
+
+            for (i=0; i<n; i++)
+            {
+                for (j=0; j<n; j++)
+                {
+                    if (n == i + j + 1)
+                        macierz[i, j] = 1;
+                    else
+                        macierz[i, j] = 0;
+
+                            Console.Write(macierz[i, j] + " ");
+                }
+
+                Console.WriteLine();
+            }
+            suma = 0;
+            for (i=0;i<n;i++)
+            {
+                suma = suma + macierz[i, i];
+            }
+            
+            Console.WriteLine("Suma wyróżnionych elementów w tablicy wynosi " + suma + ".");
             Console.WriteLine();
         }
     }
