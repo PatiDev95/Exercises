@@ -165,20 +165,24 @@ namespace KUBIAK
 
         public static void Zadanie47()
         {
-            int n = 10, i, j, suma1, suma2;
-            int[,] tablica = new int[n, n];
+            int ni = 40, nj = 50, i, j, suma1, suma2;
+            int[,] tablica = new int[nj, ni];
 
-            Console.WriteLine("Program wyświetla zawartość tablicy dwuwymiarowej " + n + "x" + n + "-elementowej.");
+            Console.WriteLine("Program wyświetla zawartość tablicy dwuwymiarowej " + ni + "x" + nj + "-elementowej.");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.Title = "Zadanie Zaawansowane!!!";
+            
 
-            for (i = 0; i < n; i++)
+            for (i = 0; i < nj; i++)
             {
-                for (j = 0; j < n; j++)
+                for (j = 0; j < ni; j++)
                 {
-                    if (j == 0) tablica[i, j] = i;
-                    if (j == 1) tablica[i, j] = i * i;
-                    if (j > 1) tablica[i, j] = 0;
-
-                    Console.Write(tablica[i, j] + " ");
+                    //if (j == 0) tablica[i, j] = i;
+                    //if (j == 1) 
+                        tablica[i, j] = i * j;
+                    //if (j > 1) tablica[i, j] = 0;
+                    var x = tablica[i, j];
+                    Console.Write(x + (x <= 9 ? "    " : x <= 99 ? "   " : x <= 999 ? "  " : " " ));
                 }
                 Console.WriteLine();
             }
@@ -186,13 +190,15 @@ namespace KUBIAK
             suma1 = 0;
             suma2 = 0;
 
-            for(i=0;i<n;i++)
+            for(i=0;i<ni;i++)
             {
                 suma1 = suma1 + tablica[i, 0];
                 suma2 = suma2 + tablica[i, 1];
             }
+            Console.ResetColor();
             Console.WriteLine("Suma liczb pierwszej kolumny to: " + suma1 + " a suma liczb drugiej kolumny to: " + suma2 + ".");
             Console.WriteLine();
+            
         }
 
         public static void Zadanie48()
@@ -225,8 +231,60 @@ namespace KUBIAK
                 }
                 Console.WriteLine();
             }
+        }
 
-           
+        public static void Zadanie49()
+        {
+            int n = 100, i, suma = 0, suma1;
+            int[] dane = new int[n];
+
+            Console.WriteLine("Program sumuje liczby od 1 do 100, znajdujące się w tablicy jednowymiarowej.");
+
+            for (i = 0; i < n; i++)
+            {
+                dane[i] = i + 1;
+            }
+
+            // Sposób z forech
+
+            foreach (int x in dane)
+            {
+                suma = suma + x;
+            }
+
+            // Sposób z for
+
+            suma1 = 0;
+
+            for (i = 0; i < n; i++)
+            {
+                suma1 = suma1 + dane[i];
+            }
+            Console.WriteLine("Suma liczb od 1 do 100 z wykorzystaniem forech wynosi: " + suma + ".");
+            Console.WriteLine("Suma liczb od 1 do 100 z wykorzystaniem for wynosi: " + suma1 + "."); 
+        }
+
+        public static void Zadanie410()
+        {
+            int n = 100, i, suma_np = 0, suma_p = 0;
+            int[] dane = new int[n];
+
+            Console.WriteLine("Program sumuje liczby parzyste i nieparzyste znajdujące się w przedziale od 1 do 100, znajdujące się w tablicy.");
+
+            for(i=0; i<n; i++)
+            {
+                dane[i] = i + 1;
+            }
+
+            foreach (int x in dane)
+            {
+                if ((x % 2) == 0)
+                    suma_p = suma_p + x;
+                else
+                    suma_np += x;
+            }
+            Console.WriteLine("Suma liczb parzystych od 1 do 100 wynosi " + suma_p + ".");
+            Console.WriteLine("Suma liczb nieparzystych od 1 do 100 wynosi " + suma_np + ".");
         }
     }
 }
