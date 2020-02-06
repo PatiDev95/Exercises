@@ -402,6 +402,156 @@ namespace KUBIAK
                 else
                     Console.WriteLine(lista[i] + ".");
             }
+            Console.WriteLine();
+        }
+
+        public static void Zadanie413()
+        {
+            int n = 10, i, j;
+            int[,] a = new int[n, n];
+            int[,] b = new int[n, n];
+            int[,] c = new int[n, n];
+
+            Console.WriteLine("ZADANIE 13");
+            Console.WriteLine("Macierz a:");
+
+            for (i=0; i<n; i++)
+            {
+                for (j=0;j<n; j++)
+                {
+                    a[i, j] = 1;
+                    Console.Write(a[i, j] + " ");
+                }
+                Console.WriteLine();
+            }
+
+            Console.WriteLine();
+
+             Console.WriteLine("Macierz b: ");
+
+            for (i=0; i<n; i++)
+            {
+                for(j=0;j<n;j++)
+                {
+                    b[i, j] = 2;
+                    Console.Write(b[i, j] + " ");
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+            Console.WriteLine("Dodanie macierzy a i b daje macierz c: ");
+
+            for(i=0;i<n;i++)
+            {
+                for(j=0;j<n; j++)
+                {
+                    c[i, j] = a[i, j] + b[i, j];
+                    Console.Write(c[i, j] + " ");
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+        }
+
+        public static void Zadanie414()
+        {
+            int n = 10, i, j;
+            int[,] a = new int[n, n];
+            int[,] b = new int[n, n];
+            int[,] c = new int[n, n];
+
+            Console.WriteLine("ZADANIE 14");
+            Console.WriteLine("Macierz a: ");
+
+            for(i=0;i<n; i++)
+            {
+                for(j=0;j<n;j++)
+                {
+                    a[i, j] = 1;
+                    Console.Write(a[i, j] + " ");
+                }
+                Console.WriteLine();
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Macierz b: ");
+
+            for (i = 0; i < n; i++)
+            {
+                for (j = 0; j < n; j++)
+                {
+                    b[i, j] = 2;
+                    Console.Write(b[i, j] + " ");
+                }
+                Console.WriteLine();
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Różnica macierzy b i a: ");
+
+            for (i = 0; i < n; i++)
+            {
+                for (j = 0; j < n; j++)
+                {
+                    c[i, j] = b[i, j] - a[i, j];
+                    Console.Write(c[i, j] + " ");
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+        }
+
+        public static void Zadanie415()
+        {
+            int n = 10, i, j;
+            int[,] a = new int[n, n];
+            int[,] b = new int[n, n];
+            int[,] c = new int[n, n];
+
+            Console.WriteLine("ZADANIE 15");
+            Console.WriteLine("Macierz a: ");
+
+            for (i = 0; i < n; i++)
+            {
+                for (j = 0; j < n; j++)
+                {
+                    a[i, j] = 1;
+                    Console.Write(a[i, j] + " ");
+                }
+                Console.WriteLine();
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Macierz b: ");
+
+            for (i = 0; i < n; i++)
+            {
+                for (j = 0; j < n; j++)
+                {
+                    b[i, j] = 2;
+                    Console.Write(b[i, j] + " ");
+                }
+                Console.WriteLine();
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Iloczyn macierzy b i a: ");
+
+            for (i = 0; i < n; i++)
+            {
+                for (j = 0; j < n; j++)
+                {
+                    c[i, j] = 0;
+                   
+                    for (int k = 0; k<n; k++)
+                    {
+                        c[i, j] += a[i, k] * b[k, j];
+                    }
+
+                    Console.Write(c[i, j] + " ");
+                }
+                Console.WriteLine();
+            }
         }
     }
 }

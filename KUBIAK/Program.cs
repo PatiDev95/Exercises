@@ -69,6 +69,9 @@ namespace KUBIAK
             Zadanie410();
             Zadanie411();
             Zadanie412();
+            Zadanie413();
+            Zadanie414();
+            Zadanie415();
 
             // lub TabliceKolekcje.Zadanie45(); jesli nie uzywamy statycznych przestrzeni nazw.
         }
