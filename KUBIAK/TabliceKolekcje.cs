@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 
 namespace KUBIAK
 {
@@ -285,6 +286,122 @@ namespace KUBIAK
             }
             Console.WriteLine("Suma liczb parzystych od 1 do 100 wynosi " + suma_p + ".");
             Console.WriteLine("Suma liczb nieparzystych od 1 do 100 wynosi " + suma_np + ".");
+            Console.WriteLine();
+        }
+
+        public static void Zadanie411()
+        {
+            ArrayList lista = new ArrayList();
+
+            lista.Add(20);
+            lista.Add(51);
+            lista.Add(-72);
+            lista.Add(4);
+            lista.Add(14);
+            lista.Add(-4);
+
+            Console.Write("Elementy nieposortowane: ");
+
+            for (int i = 0; i< lista.Count; i++)
+            {
+                if (i < lista.Count-1)
+                    Console.Write(lista[i] + ", ");
+                else
+                    Console.WriteLine(lista[i] + ".");
+            }
+
+            lista.Sort();
+
+            Console.Write("Elementy posortowane: ");
+
+            for (int i=0; i<lista.Count; i++)
+            {
+                if (i < lista.Count - 1)
+                    Console.Write(lista[i] + ", ");
+                else
+                    Console.WriteLine(lista[i] + ".");
+            }
+
+            lista.RemoveAt(1);
+            
+            Console.Write("Usunięto drugi element z listy i dodano nowy element do listy: ");
+            lista.Add(10);
+
+            for (int i =0; i<lista.Count; i++)
+            {
+                if (i < lista.Count - 1)
+                    Console.Write(lista[i] + ", ");
+                else
+                    Console.WriteLine(lista[i] + ".");
+            }
+
+            lista.Sort();
+
+            Console.Write("Elementy posortowane: ");
+
+            for( int i = 0; i< lista.Count; i++)
+            {
+                if (i < lista.Count - 1)
+                    Console.Write(lista[i] + ", ");
+                else
+                    Console.WriteLine(lista[i] + ".");
+            }
+            Console.WriteLine();
+        }
+
+        public static void Zadanie412()
+        {
+            ArrayList lista = new ArrayList();
+
+            lista.Add("Tomek");
+            lista.Add("Zenek");
+            lista.Add("Ania");
+            lista.Add("Jarek");
+            lista.Add("Kasia");
+            lista.Add("Dominika");
+
+            Console.Write("Elementy nieposortowane: ");
+            for (int i =0; i<lista.Count; i++)
+            {
+                if (i < lista.Count - 1)
+                    Console.Write(lista[i] + ", ");
+                else
+                    Console.WriteLine(lista[i] + ".");
+            }
+
+            lista.Sort();
+
+            Console.Write("Elementy posortowane: ");
+            for (int i = 0; i < lista.Count; i++)
+            {
+                if (i < lista.Count - 1)
+                    Console.Write(lista[i] + ", ");
+                else
+                    Console.WriteLine(lista[i] + ".");
+            }
+
+            lista.RemoveAt(2);
+            Console.Write("Usunięto drugi element z listy i dodano nowy element do listy: ");
+            lista.Add("Marta");
+
+            for (int i = 0; i < lista.Count; i++)
+            {
+                if (i < lista.Count - 1)
+                    Console.Write(lista[i] + ", ");
+                else
+                    Console.WriteLine(lista[i] + ".");
+            }
+
+            lista.Sort();
+
+            Console.Write("Elementy posortowane: ");
+            for (int i =0; i<lista.Count; i++)
+            {
+                if (i < lista.Count - 1)
+                    Console.Write(lista[i] + ", ");
+                else
+                    Console.WriteLine(lista[i] + ".");
+            }
         }
     }
 }
