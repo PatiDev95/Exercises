@@ -3,6 +3,11 @@ using static KUBIAK.TabliceKolekcje;
 using static KUBIAK.Informacjeogólne;
 using static KUBIAK.Ifelseswitchcase;
 using static KUBIAK.Pętle;
+using static KUBIAK.PoleProstokata;
+using static KUBIAK.RownanieKwadratowe;
+using static KUBIAK.Macierz;
+using static KUBIAK.Sortowanie_liczb;
+using static KUBIAK.Silnia;
 
 namespace KUBIAK
 {
@@ -57,21 +62,27 @@ namespace KUBIAK
             //Zadanie328();
             //Zadanie328B();
             //Zadanie328C();
-            Zadanie41();
-            Zadanie42();
-            Zadanie43();
-            Zadanie44();
-            Zadanie45();
-            Zadanie46();
-            Zadanie47();
-            Zadanie48();
-            Zadanie49();
-            Zadanie410();
-            Zadanie411();
-            Zadanie412();
-            Zadanie413();
-            Zadanie414();
-            Zadanie415();
+            //Zadanie41();
+            //Zadanie42();
+            //Zadanie43();
+            //Zadanie44();
+            //Zadanie45();
+            //Zadanie46();
+            //Zadanie47();
+            //Zadanie48();
+            //Zadanie49();
+            //Zadanie410();
+            //Zadanie411();
+            //Zadanie412();
+            //Zadanie413();
+            //Zadanie414();
+            //Zadanie415();
+            //new PoleProstokata().wykonaj_zadanie();
+            //new RownanieKwadratowe().wykonaj_zadanie();
+            //new Macierz().wykonaj_zadanie();
+            //new Sortowanie_liczb().wykonaj_zadanie();
+            new Silnia().Wykonaj_Zadanie();
+
 
             // lub TabliceKolekcje.Zadanie45(); jesli nie uzywamy statycznych przestrzeni nazw.
         }
