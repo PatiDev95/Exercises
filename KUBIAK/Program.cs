@@ -8,6 +8,10 @@ using static KUBIAK.RownanieKwadratowe;
 using static KUBIAK.Macierz;
 using static KUBIAK.Sortowanie_liczb;
 using static KUBIAK.Silnia;
+using static KUBIAK.Liczba_Trójkątna;
+using static KUBIAK.Ciąg_Fibonacciego;
+using static KUBIAK.Osoba;      
+
 
 namespace KUBIAK
 {
@@ -81,7 +85,10 @@ namespace KUBIAK
             //new RownanieKwadratowe().wykonaj_zadanie();
             //new Macierz().wykonaj_zadanie();
             //new Sortowanie_liczb().wykonaj_zadanie();
-            new Silnia().Wykonaj_Zadanie();
+            //new Silnia().Wykonaj_Zadanie();
+            //new Liczba_Trójkątna().Wykonaj_Zadanie();
+            //new Ciąg_Fibonacciego().Wykonaj_zadanie();
+            new Osoba().Wykonaj_Zadanie();
 
 
             // lub TabliceKolekcje.Zadanie45(); jesli nie uzywamy statycznych przestrzeni nazw.
