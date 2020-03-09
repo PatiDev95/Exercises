@@ -14,6 +14,7 @@ using static KUBIAK.Osoba;
 using static KUBIAK.Plik_tekstowy;
 using static KUBIAK.Macierz_pliki_tekstowe;
 using static KUBIAK.Macierz_pliki_tekstowe2;
+using static KUBIAK.Plik_swobodny;
 
 
 namespace KUBIAK
@@ -94,7 +95,8 @@ namespace KUBIAK
             //new Osoba().Wykonaj_Zadanie();
             //new Plik_tekstowy().Wykonaj_Zadanie();
             //new Macierz_pliki_tekstowe().Wykonaj_zadanie();
-            new Macierz_pliki_tekstowe2().Wykonaj_zadanie();
+            //new Macierz_pliki_tekstowe2().Wykonaj_zadanie();
+            new Plik_swobodny().Wykonaj_zadanie();
 
 
             // lub TabliceKolekcje.Zadanie45(); jesli nie uzywamy statycznych przestrzeni nazw.
